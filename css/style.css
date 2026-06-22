@@ -5,7 +5,9 @@
 }
 
 body{
-    background:#f4f3f1;
+    background-color:#f4f3f1;
+    background-image:url("../images/papertexture.jpg");
+    background-repeat:repeat;
     color:#111;
     font-family:"Cormorant Garamond", serif;
 }
