@@ -376,7 +376,6 @@ body::before{
 }
 
 .about-portrait{
-    position:sticky;
     top:140px;
 }
 
@@ -480,4 +479,22 @@ body::before{
 
 .exhibition{
     margin-bottom:40px;
+}
+
+/* Umgekehrte Anordnung für Prozess-Seite */
+.about-layout--reversed {
+    grid-template-columns: 1fr minmax(280px, 42%);
+}
+
+.about-layout--reversed .about-portrait {
+    grid-column: 2;
+}
+
+.about-layout--reversed .about-content {
+    grid-column: 1;
+}
+
+/* Optional: etwas mehr Abstand zwischen den beiden Blöcken */
+.about-layout + .about-layout {
+    margin-top: 140px;
 }
